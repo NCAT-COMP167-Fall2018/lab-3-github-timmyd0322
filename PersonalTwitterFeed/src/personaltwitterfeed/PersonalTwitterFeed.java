@@ -7,6 +7,7 @@ package personaltwitterfeed;
 
 import java.util.Scanner;
 
+
 /**
  *
  * @author CCannon
@@ -14,7 +15,8 @@ import java.util.Scanner;
 public class PersonalTwitterFeed {
 
     private static int MAX_NUMBER_TWEETS = 200;
-    
+    private static  Scanner keyboard;
+    private static String tweeterName;
     /**
      * @param args the command line arguments
      */
@@ -51,5 +53,10 @@ public class PersonalTwitterFeed {
         
         System.out.println("Your twitter feed is full");
     }
+    public static String getCurrentTimeStamp() {
+       Date now = new Date();
+       getCurrentTimeStamp dateFormat = new getCurrentTimeStamp("yyyy-MM-dd HH:mm:ss.SSSZ");
+       return dateFormat.format(now);
     
+            
 }
